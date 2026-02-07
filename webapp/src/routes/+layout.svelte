@@ -4,12 +4,19 @@
     import { base } from "$app/paths";
     import navSections from "$lib/nav.json";
     import Navbar from "$lib/components/Navbar.svelte";
+    import Search from "$lib/components/Search.svelte";
+    import Chat from "$lib/components/Chat.svelte";
     import { afterNavigate } from "$app/navigation";
 
     let isSidebarOpen = false;
+    let isChatOpen = false;
 
     function toggleSidebar() {
         isSidebarOpen = !isSidebarOpen;
+    }
+
+    function toggleChat() {
+        isChatOpen = !isChatOpen;
     }
 
     // Close sidebar after navigation on mobile
@@ -19,7 +26,8 @@
 </script>
 
 <div class="layout">
-    <Navbar on:toggleSidebar={toggleSidebar} />
+    <Navbar on:toggleSidebar={toggleSidebar} on:toggleChat={toggleChat} />
+    <Chat bind:isOpen={isChatOpen} />
 
     {#if isSidebarOpen}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -32,6 +40,10 @@
             <a href="{base}/">
                 <h1>🐍 Python Data Tools</h1>
             </a>
+        </div>
+
+        <div class="sidebar-search">
+            <Search />
         </div>
 
         {#each navSections as section}
@@ -111,6 +123,18 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar-search {
+        margin-bottom: 1.5rem;
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        .sidebar-search {
+            display: block;
+        }
     }
 
     .nav-section {
@@ -171,6 +195,7 @@
         margin-left: 260px;
         padding: 2rem 3rem;
         max-width: 1600px;
+        margin-top: 64px; /* Space for fixed navbar */
     }
 
     @media (max-width: 900px) {
