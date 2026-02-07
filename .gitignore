@@ -1,0 +1,32 @@
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.log
+
+### Web (Svelte/Vite) ###
+webapp/node_modules/
+webapp/.svelte-kit/
+webapp/build/
+webapp/dist/
+.env
+.env.local
+.env.*.local
+
+### IDE/OS ###
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+### Project Specific ###
+data.csv
+implementation-todo.md

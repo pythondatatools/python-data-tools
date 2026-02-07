@@ -1,0 +1,116 @@
+[
+    {
+        "section": "Load",
+        "path": "/load",
+        "items": [
+            {
+                "id": "csv",
+                "title": "CSV / Text Files",
+                "path": "/load/csv"
+            },
+            {
+                "id": "parquet",
+                "title": "Parquet / Arrow",
+                "path": "/load/parquet"
+            },
+            {
+                "id": "json",
+                "title": "JSON / NDJSON",
+                "path": "/load/json"
+            },
+            {
+                "id": "database",
+                "title": "Databases",
+                "path": "/load/database"
+            },
+            {
+                "id": "cloud",
+                "title": "Cloud (BigQuery, S3)",
+                "path": "/load/cloud"
+            }
+        ]
+    },
+    {
+        "section": "Transform",
+        "path": "/transform",
+        "items": [
+            {
+                "id": "filter",
+                "title": "Filtering & Selection",
+                "path": "/transform/filter"
+            },
+            {
+                "id": "sort",
+                "title": "Sorting & Ordering",
+                "path": "/transform/sort"
+            },
+            {
+                "id": "join",
+                "title": "Joins & Merges",
+                "path": "/transform/join"
+            },
+            {
+                "id": "aggregate",
+                "title": "Aggregation & Grouping",
+                "path": "/transform/aggregate"
+            },
+            {
+                "id": "pivot",
+                "title": "Pivot & Reshape",
+                "path": "/transform/pivot"
+            },
+            {
+                "id": "window",
+                "title": "Window Functions",
+                "path": "/transform/window"
+            }
+        ]
+    },
+    {
+        "section": "Output",
+        "path": "/output",
+        "items": [
+            {
+                "id": "files",
+                "title": "CSV / Parquet / JSON",
+                "path": "/output/files"
+            },
+            {
+                "id": "database",
+                "title": "Databases",
+                "path": "/output/database"
+            },
+            {
+                "id": "bigquery",
+                "title": "BigQuery",
+                "path": "/output/bigquery"
+            }
+        ]
+    },
+    {
+        "section": "Special",
+        "path": "/special",
+        "items": [
+            {
+                "id": "excel",
+                "title": "Excel Reports",
+                "path": "/special/excel"
+            },
+            {
+                "id": "charts",
+                "title": "Visualization",
+                "path": "/special/charts"
+            },
+            {
+                "id": "ml",
+                "title": "ML Integration",
+                "path": "/special/ml"
+            },
+            {
+                "id": "llm",
+                "title": "LLM Prompts",
+                "path": "/special/llm"
+            }
+        ]
+    }
+]
