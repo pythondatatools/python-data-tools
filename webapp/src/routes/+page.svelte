@@ -26,9 +26,11 @@
       <span class="icon">🐻‍❄️</span>
       <span class="name">Polars</span>
       <span class="desc">High-perf</span>
-    <div class="cta-row">
-      <a href="{base}/setup" class="btn primary">🚀 Get Started with UV</a>
     </div>
+  </div>
+
+  <div class="cta-row">
+    <a href="{base}/setup" class="btn primary">🚀 Get Started with UV</a>
   </div>
 </div>
 
@@ -141,6 +143,36 @@
   .platform-card .desc {
     font-size: 0.75rem;
     color: var(--text-muted);
+  }
+
+  .cta-row {
+    margin-top: 3rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn.primary {
+    background: linear-gradient(
+      135deg,
+      var(--accent-blue),
+      var(--accent-purple)
+    );
+    color: white;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.1);
   }
 
   .intro {
