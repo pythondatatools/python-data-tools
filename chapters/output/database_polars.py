@@ -6,6 +6,7 @@
 #     "adbc-driver-sqlite",
 #     "sqlalchemy",
 #     "pandas",
+#     "pyarrow",
 # ]
 # ///
 import polars as pl
