@@ -16,6 +16,9 @@ dependencies = [
     "polars>=0.20",
     "pyarrow>=14.0",
     "matplotlib>=3.7",
+    "connectorx>=0.3",
+    "google-cloud-bigquery>=3.0",
+    "db-dtypes>=1.0",
 ]
 
 [project.optional-dependencies]
